@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+    	android:layout_width="match_parent"
+    	android:layout_height="50dp"
+    	android:layout_gravity="center"
+    	android:text="酷软天气"
+    	android:gravity="center"
+    	android:textSize="30sp"
+    	android:background="#7ED96F"
+    />
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="5" 
+	    android:background="#C7EDCC">
+
+	    <TextView
+	        android:id="@+id/xinming_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="姓名:"
+	        android:textSize="35sp" />
+
+	    <EditText
+	        android:id="@+id/name_id"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_toRightOf="@id/xinming_id"
+	        android:hint="用户名/邮箱/昵称" />
+
+	    <TextView
+	        android:id="@+id/mima_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/xinming_id"
+	        android:text="密码:"
+	        android:textSize="35sp" />
+	    <EditText
+	        android:id="@+id/passwors_id"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_toRightOf="@id/mima_id"
+	        android:password="true"
+	        android:layout_below="@id/xinming_id" />
+	    <CheckBox 
+	    	android:id="@+id/checkbox_id"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="30dp"
+	    	android:layout_below="@id/mima_id"
+	    />
+
+	    <TextView
+	        android:id="@+id/www"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_below="@id/passwors_id"
+	        android:layout_toRightOf="@+id/checkbox_id"
+	        android:gravity="center"
+	        android:text="记住密码"
+	        android:textSize="30sp" />
+	       <CheckBox 
+	    	android:id="@+id/checkautologin_id"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="30dp"
+	    	android:layout_toRightOf="@id/www"
+	    	android:layout_below="@id/passwors_id"
+	    />
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_below="@id/passwors_id"
+	        android:layout_toRightOf="@+id/checkautologin_id"
+	        android:gravity="center"
+	        android:text="自动登录"
+	        android:textSize="30sp" />
+
+		<Button 
+			android:id="@+id/buttonlogin_id"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:text="登录"
+			android:background="#F5BC3A"
+			android:textSize="30sp"
+			android:layout_alignParentBottom="true"
+		/>
+
+	</RelativeLayout>
+		<TextView
+	        android:id="@+id/ss_id"
+	        android:layout_width="match_parent"
+	        android:layout_height="55dp"
+	        android:background="#5351D9"
+	        android:ellipsize="marquee"
+	        android:focusable="true"
+	        android:focusableInTouchMode="true"
+	        android:marqueeRepeatLimit="marquee_forever"
+	        android:singleLine="true"
+	        android:text="酷软天气内测版" 
+	        android:textSize="30sp"
+	        android:gravity="center"/>
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="0sp"
+		android:layout_weight="1"
+		android:orientation="horizontal">
+	    <Button 
+	    	android:id="@+id/buttonload_id"
+	    	android:layout_width="0sp"
+	    	android:text="注册酷软"
+	    	android:layout_height="match_parent"
+	    	android:layout_weight="1"
+	    />
+	    <Button 
+	        android:id="@+id/buttofour_id"
+	        android:layout_width="0sp"
+	    	android:text="关于我们"
+	    	android:layout_height="match_parent"
+	    	android:layout_weight="1"
+	    />
+	</LinearLayout>
+    
+    
+</LinearLayout>

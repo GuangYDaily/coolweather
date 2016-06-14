@@ -1,0 +1,6 @@
+create table load(
+id integer primary key autoincrement,
+name text,
+password text,
+email text,
+)
